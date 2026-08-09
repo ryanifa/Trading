@@ -7,6 +7,7 @@ import { PriceChart } from "./components/PriceChart";
 import { TradePanel } from "./components/TradePanel";
 import { Portfolio } from "./components/Portfolio";
 import { OrderHistory } from "./components/OrderHistory";
+import { T212Panel } from "./components/T212Panel";
 
 function StatTiles() {
   const { quotes, portfolio } = useStore();
@@ -64,6 +65,7 @@ function Dashboard() {
         </div>
         <div>
           {quote && inst && <PriceChart quote={quote} name={inst.name} />}
+          <T212Panel />
           <OrderHistory />
         </div>
         <div>

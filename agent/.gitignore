@@ -1,0 +1,5 @@
+.env
+data/
+logs/
+instruments-cache.json
+node_modules/

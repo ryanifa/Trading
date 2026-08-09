@@ -1,0 +1,13 @@
+{
+  "name": "trading212-agent",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Haalt Trading212-portfolio op en pusht naar een GitHub Gist voor de Tradr-app",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node --env-file=.env trading212-agent.mjs"
+  }
+}
